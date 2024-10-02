@@ -2,7 +2,7 @@
 
 ## Project Direction
   - **Goal**: Implement a profanity filter for game domain chats  
-    (e.g., "fuck" -> "**", "watermelon fuck you" -> "watermelon **** you")
+    (e.g., "씨발" -> "**", "수박씨발라먹어" -> "수박씨발라먹어")
   - However, due to practical constraints, we worked with the available resources as much as possible.
 	- Using a profanity dataset, we labeled profanity and non-profanity as 1 and 0, respectively.
 	- We intended to use game chat data, but due to copyright issues, we built the dataset by crawling comments from the gaming site 'Inven.'
@@ -17,7 +17,7 @@
 
 ### The Challenge of Judging Profanity and Implementing Filtering
   - This challenge arises from the nature of the Korean language.  
-    There are sentences that are not profane but sound similar to profanity (e.g., "Joka crayon 18 colors").
+    There are sentences that are not profane but sound similar to profanity (e.g., "조카크레파스18색").
   - We trained the model by focusing on hard positive sentences (actual profanity) and hard negative sentences (non-profane words that sound like profanity).
 
 ## Dataset
